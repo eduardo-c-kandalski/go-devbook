@@ -15,6 +15,6 @@ function fazerLogin(evento) {
       window.location = "/home";
     })
     .fail(function () {
-      alert("Usuário ou senha inválidos!");
+      Swal.fire("Ops... ", "Usuário ou senha inválidos!", "error");
     });
 }
